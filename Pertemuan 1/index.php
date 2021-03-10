@@ -52,7 +52,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			<? foreach($mhs as $student); ?>
+			<? foreach($mahasiswa as $student); ?>
 				<tr>
 					<td><? echo $student['Nama']; ?></td>
 					<td><? echo $student['NIM']; ?></td>
