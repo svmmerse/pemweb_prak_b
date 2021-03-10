@@ -1,6 +1,8 @@
 <?php
     $contoh_int = 1;
     $contoh_str = "aku"
+    $contoh_double = 1.1;
+    $contoh_arr = [];
 
     $array = ['pemro','website','kelas b','sem4'];
     foreach ($array as $value) {
@@ -40,6 +42,23 @@
     <title>Pertemuan 1</title>
 </head>
 <body>
-
+	<h1> DATA MAHASISWA </h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Nama</th>
+				<th>Nim</th>
+				<th>Usia</th>
+			</tr>
+		</thead>
+		<tbody>
+			<? foreach($mhs as $student); ?>
+				<tr>
+					<td><? echo $student['Nama']; ?></td>
+					<td><? echo $student['NIM']; ?></td>
+					<td><? echo $student['usia']; ?></td>
+				</tr>
+		</tbody>
+	</table>
 </body>
 </html>
