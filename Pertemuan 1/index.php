@@ -3,7 +3,8 @@
     $contoh_str = "aku"
     $contoh_double = 1.1;
     $contoh_arr = [];
-
+?>
+<?php
     $array = ['pemro','website','kelas b','sem4'];
     foreach ($array as $value) {
         echo $value . "";
@@ -12,8 +13,8 @@
     for ($i =0; $i < count($array); $i++){
         echo $array [$i]. "<br>";
     }
-
-    $mhs = [
+?>
+    $mahasiswa = [
         [
         'nama' => 'syafiq',
         'nim' => '192410101071',
@@ -42,6 +43,7 @@
     <title>Pertemuan 1</title>
 </head>
 <body>
+	
 	<h1> DATA MAHASISWA </h1>
 	<table>
 		<thead>
@@ -53,11 +55,20 @@
 		</thead>
 		<tbody>
 			<? foreach($mahasiswa as $student); ?>
+				<?php
+					switch ($student){
+						case $student['nama'] === 'firman':
+							echo $student['nama'};
+							break;
+						default :
+							brak;
+				?>
 				<tr>
 					<td><? echo $student['Nama']; ?></td>
 					<td><? echo $student['NIM']; ?></td>
 					<td><? echo $student['usia']; ?></td>
 				</tr>
+			<? enforeach; ?>
 		</tbody>
 	</table>
 </body>
