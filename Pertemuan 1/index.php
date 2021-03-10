@@ -65,10 +65,10 @@
 				?>
 				<tr>
 					<td><? echo $student['Nama']; ?></td>
-					<td><? echo $student['NIM']; ?></td>
-					<td><? echo $student['usia']; ?></td>
+					<td><? echo $student['NiM']; ?></td>
+					<td><? echo $student['Usia']; ?></td>
 				</tr>
-			<? enforeach; ?>
+			<? endforeach; ?>
 		</tbody>
 	</table>
 </body>
